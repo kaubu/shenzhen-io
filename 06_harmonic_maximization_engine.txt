@@ -1,0 +1,19 @@
+[M6000 - audio-in: p0, maximize: p1]
+  mov p0 acc
+  teq p1 100
++ jmp al
+- jmp send
+  
+al:
+  sub 50
+  mul 4
+  add 50
+  
+send:
+  mov acc x3
+  slp 1
+
+[M4000 - M6000 input: x0, audio-out: p1]
+  slx x0
+  mov x0 p1
+  
