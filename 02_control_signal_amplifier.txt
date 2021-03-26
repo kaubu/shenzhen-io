@@ -1,0 +1,4 @@
+  mov 2 acc
+  mul p0
+  mov acc p1
+  slp 1
