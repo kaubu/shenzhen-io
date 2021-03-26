@@ -1,0 +1,25 @@
+[M4000 - foul: p0, point: p1]
+  teq p0 100
++ add 2 #SUB
+  teq p1 100
++ add 1 #ADD
+  mov acc x1
+  mov 0 acc
+  slp 1
+
+[M6000 - M4000 x1: x0]
+  slx x0
+  mov x0 dat
+  teq dat 1
++ add 1
+- add 0
+  teq dat 2
++ sub 2
+- add 0
+  tlt acc 0
++ mov 0 acc
+  mov acc x3
+  mov 0 dat
+  slp 1
+
+[XBus Display - M6000 x0: input]
