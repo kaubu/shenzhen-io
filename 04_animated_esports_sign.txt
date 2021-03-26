@@ -1,0 +1,26 @@
+[click-0: p0, click-1: p1 - MC4000]
+  mov 0 p1
+  mov 100 p0
+  slp 1
+  mov 0 p0
+  mov 100 p1
+  slp 1
+
+[drink-0: p0, drink-1: p1 - MC6000]
+  mov 0 p1
+  mov 100 p0
+  slp 6
+  mov 0 p0
+  mov 100 p1
+  slp 1
+  mov 0 p1
+  slp 2
+  mov 100 p1
+  slp 1
+
+[drink-2: p0 - MC4000]
+  slp 7
+  mov 100 p0
+  slp 2
+  mov 0 p0
+  slp 1
